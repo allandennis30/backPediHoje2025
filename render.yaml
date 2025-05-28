@@ -3,6 +3,6 @@ services:
     name: pedi-hoje-backend
     env: node
     plan: free
-    buildCommand: npm install
-    startCommand: npm start
+    buildCommand: npm install && npm run build
+    startCommand: node dist/server.js
     autoDeploy: true
